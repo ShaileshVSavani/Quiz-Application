@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { quizzes } from '../data/quizzes'; // Assuming your quizzes data is here
+import { quizzes } from '../data/quizzes'; 
 
 const QuizListPage = () => {
   // Initialize state here, before any conditional logic or rendering
-  const [quizData, setQuizData] = useState(quizzes);
+  const [quizData] = useState(quizzes);
 
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-6">

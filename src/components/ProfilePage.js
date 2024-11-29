@@ -4,23 +4,20 @@ import React, { useEffect, useState } from 'react';
 
 const ProfilePage = () => {
   const [userEmail, setUserEmail] = useState('');
-  const [userPassword, setUserPassword] = useState('');
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
-    // Get the authentication data from localStorage
     const storedAuthData = JSON.parse(localStorage.getItem('auth'));
 
     if (storedAuthData) {
       // If user data exists, set state variables
       setUserEmail(storedAuthData.email);
-      setUserPassword(storedAuthData.password);
+   
       // Use the email or any part of the data to create a username or initials for avatar
       setUserName(storedAuthData.email.split('@')[0]);
     } else {
       // Handle case when no user data is found in localStorage
       setUserEmail('No email found');
-      setUserPassword('No password found');
       setUserName('User');
     }
   }, []);
