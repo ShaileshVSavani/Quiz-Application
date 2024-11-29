@@ -61,9 +61,8 @@ This will start the development server and open the app in your browser at [http
 
 ## Deployment
 
-You can view the live version of this project here: [Live Demo](https://your-deployment-link-here.com)
+You can view the live version of this project here: [Live Demo](https://quiz-application-alpha.vercel.app/)
 
-> Replace the above link with the actual URL of your deployed application.
 
 ## Folder Structure
 
