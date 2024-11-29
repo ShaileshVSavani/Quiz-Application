@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+You can add the deployment link section to the README like this:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Quiz Application
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This is a React-based quiz application where users can take various quizzes, answer multiple-choice questions, and see their results at the end of each quiz. The app tracks user scores and stores them in the browser's `localStorage`, allowing users to view their progress and results on their profile page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application features a clean, responsive design using Tailwind CSS, and provides users with an intuitive interface for navigating through quizzes and viewing their performance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication**: Allows users to register and log in.
+- **Quiz Selection**: Users can select from a list of available quizzes.
+- **Multiple-Choice Questions**: Each quiz consists of multiple questions with multiple answer options.
+- **Score Tracking**: After completing the quiz, users receive a score summary with the number of correct, incorrect, and skipped answers.
+- **Profile Page**: Displays user details and allows users to view their past quiz attempts.
+- **Responsive Design**: The app is fully responsive and works well across all screen sizes using Tailwind CSS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- **Frontend**: 
+  - React (for building the user interface)
+  - Tailwind CSS (for styling)
+  - React Router (for handling navigation between pages)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Backend**: 
+  - The application uses `localStorage` for storing user data and quiz results, making it a fully client-side solution.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started with this project, follow these steps:
 
-### `npm run eject`
+### 1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/ShaileshVSavani/Quiz-Application.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Navigate into the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd quiz-application
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Install the required dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Run the application:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+This will start the development server and open the app in your browser at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+You can view the live version of this project here: [Live Demo](https://your-deployment-link-here.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> Replace the above link with the actual URL of your deployed application.
 
-### Making a Progressive Web App
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Here is an overview of the project’s folder structure:
 
-### Advanced Configuration
+```
+/src
+  /components      - Contains all React components like QuizPage, ScoreSummaryPage, and ProfilePage
+  /data            - Contains mock quiz data (questions and answers)
+  /styles          - Tailwind CSS configuration
+  App.js           - Main React component that sets up routes and renders pages
+  index.js         - The entry point for the application
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+### Quiz Page
+- Users can navigate to a quiz by selecting from a list of available quizzes.
+- Each quiz consists of multiple-choice questions, and users select an answer for each question.
+- After answering all questions or pressing the "Next" button, the user is shown their score summary.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Score Summary
+- After completing a quiz, users are shown their total score with the correct and incorrect answers listed.
+- Correct answers are shown in **green**, incorrect answers in **red**, and skipped answers in **gray**.
 
-### `npm run build` fails to minify
+### Profile Page
+- Users can view their profile, which includes their email, username, and past quiz results.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
